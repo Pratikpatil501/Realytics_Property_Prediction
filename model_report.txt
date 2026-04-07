@@ -1,0 +1,20 @@
+=======================================================
+  MUMBAI HOUSE PRICE PREDICTION - MODEL REPORT
+=======================================================
+
+Dataset rows: 91988
+Regions: 119
+Features: ['bhk', 'type', 'area', 'region', 'status', 'age']
+
+Model                           RMSE        MAE       R2
+-------------------------------------------------------
+Linear Regression             127.81      72.03   0.4527
+Random Forest                  68.61      33.91   0.8423
+GradientBoosting                39.4      20.43    0.948
+XGBoost                        38.17       19.6   0.9512 <- BEST
+-------------------------------------------------------
+
+Best model: XGBoost
+Error margin: +/-12.6%
+
+Saved: model.pkl, encoders.pkl, meta.json
